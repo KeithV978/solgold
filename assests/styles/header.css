@@ -22,7 +22,7 @@ nav {
   top: 80px;
   left: 0;
   right: 0;
-  background-color: #2a2a2a;
+  background-color: #232323;
   z-index: 1000;
   animation: enter 0.4s ease-in-out;
   flex-direction: column;

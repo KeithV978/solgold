@@ -6,7 +6,7 @@ section.create {
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #1b1a17 0%, #302505 50%, #1b1a17 100%);
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   gap: 2rem;
 }
 

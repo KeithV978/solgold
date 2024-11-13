@@ -24,10 +24,17 @@ div.card {
   background-color: var(--primary-color);
   padding: var(--padding-md);
   border-radius: 15px;
-  width: 350px;
   /* min-width: 300px; */
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.card > div:nth-child(1) {
+div.card > div:first-child {
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 12px;
 }
@@ -37,4 +44,15 @@ div.card {
 }
 .card > div:nth-child(2) {
   color: #c6c6c6;
+}
+@media only screen and (min-width: 600px) {
+  div.card {
+    width: 350px;
+    height: auto;
+    display: block;
+    text-align: left;
+  }
+  div.card > div:first-child {
+    flex-direction: row;
+  }
 }

@@ -1,6 +1,6 @@
 section.team {
   position: relative;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 section.team > .header-text {
   text-align: center;
