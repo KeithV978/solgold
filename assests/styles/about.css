@@ -1,0 +1,94 @@
+section.about {
+  margin-top: 5rem;
+  width: 100%;
+  /* min-height: 700px; */
+  padding: 1rem;
+}
+section.about > .header-text {
+  text-align: center;
+}
+section.about > .header-text p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about div.top {
+  gap: 2rem;
+}
+.about .top .image,
+.about .bottom .image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  width: 100%;
+  height: 300px;
+}
+.about .top .image {
+  background-image: url("/assests/images/wallet.svg");
+}
+.about .top .texts {
+  width: 100%;
+}
+.about .top .texts p:nth-child(1),
+.about .bottom .texts p:nth-child(1) {
+  font-weight: bold;
+  background: linear-gradient(45deg, #886800 0.1%, #ffc300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0.5rem 0;
+}
+.about .top .texts h1,
+.about .bottom .texts h1 {
+  font-size: 2rem;
+  max-width: 300px;
+  padding: 0.5rem 0;
+}
+.about .top .texts .sub-texts,
+.about .bottom .texts .sub-texts {
+  padding: 0.5rem 0;
+  width: 90%;
+  color: #c6c6c6;
+  line-height: 25px;
+}
+.about .bottom {
+  margin-top: 3rem;
+  position: relative;
+}
+.about .bottom .image {
+  background-image: url("/assests/images/coin.svg");
+}
+
+.wallets-values {
+  width: 80%;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+.wallet-value h1 {
+  font-weight: bold;
+  background: linear-gradient(45deg, #886800 0.1%, #ffc300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wallet-value p {
+  color: #c6c6c6;
+}
+.chains-value img {
+  width: 50px;
+}
+.chains-value {
+  gap: 0.5rem;
+  width: 100%;
+  font-size: 0.8rem;
+}
+.chains-value > p {
+  color: #c6c6c6;
+}
+@media only screen and (min-width: 600px) {
+  section.about {
+    padding: 0;
+  }
+  .wallets-values {
+    width: 60%;
+  }
+}

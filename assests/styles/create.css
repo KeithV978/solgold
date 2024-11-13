@@ -1,0 +1,52 @@
+section.create {
+  margin-top: 4rem;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #1b1a17 0%, #302505 50%, #1b1a17 100%);
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-text h1 {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+.main-text > p {
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+button.connect-btn {
+  width: fit-content;
+}
+@media only screen and (min-width: 600px) {
+  .main-text {
+    align-items: baseline;
+  }
+  section.create {
+    flex-direction: row;
+  }
+  .main-text h1 {
+    line-height: 67.5px;
+    width: 60%;
+    font-size: 50px;
+    text-align: left;
+  }
+
+  .main-text > p {
+    width: 80%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,99 @@
+section.team {
+  position: relative;
+  padding: 1rem;
+}
+section.team > .header-text {
+  text-align: center;
+}
+section.team > .header-text p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2rem 0;
+}
+
+section.team > .team-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+section.team > .team-cards-wrapper .team-card {
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  width: 200px;
+  height: 350px;
+  padding: 1rem;
+  text-align: center;
+}
+.team-card .image {
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto 1rem auto;
+}
+section.team > .team-cards-wrapper .team-card > div .name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+section.team > .team-cards-wrapper .team-card > div .designation {
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #c6c6c6;
+}
+.social-icons {
+  gap: 1rem;
+  width: min-content;
+  margin: 1rem auto;
+}
+.social-icons a img {
+  width: 12px;
+}
+section.team > .team-cards-wrapper .team-card:nth-child(1) .image {
+  background-image: url(/assests/images/team/image\ 1.png);
+}
+section.team > .team-cards-wrapper .team-card:nth-child(2) .image {
+  background-image: url(/assests/images/team/image\ 2.png);
+}
+section.team > .team-cards-wrapper .team-card:nth-child(3) .image {
+  background-image: url(/assests/images/team/image\ 3.png);
+}
+section.team > .team-cards-wrapper .team-card:nth-child(4) .image {
+  background-image: url(/assests/images/team//image\ 4.png);
+}
+section.team > .team-cards-wrapper .team-card:nth-child(5) .image {
+  background-image: url(/assests/images/team/image\ 5.png);
+}
+section.team > .team-cards-wrapper > :nth-child(2n) {
+  margin-top: 1.5rem;
+}
+section.team > .team-cards-wrapper > :nth-child(2n + 1) {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  section.team {
+    padding: 0;
+  }
+  section.team > .team-cards-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    justify-content: left;
+    align-items: left;
+  }
+  section.team > .team-cards-wrapper .team-card {
+    min-width: 200px;
+    min-height: 300px;
+    padding: 0 1rem 1rem 1rem;
+  }
+  section.team > .team-cards-wrapper .team-card .image {
+    width: 160px;
+    margin: 0 auto 1rem auto;
+  }
+}

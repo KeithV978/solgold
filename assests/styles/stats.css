@@ -1,0 +1,45 @@
+.stats {
+  width: 90%;
+  min-height: 80px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.stats-card {
+  text-align: left;
+  width: 100%;
+  margin-top: 2rem;
+}
+.stats-card p {
+  color: #c6c6c6;
+}
+
+/* .figure {
+} */
+.figure > p {
+  font-size: 1.9rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #886800, #ffc300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rule-2 {
+  border-color: #ffeeb5;
+  max-width: 174px;
+  margin: 5rem auto 1rem auto;
+}
+@media only screen and (min-width: 600px) {
+  .stats {
+    flex-direction: row;
+    gap: 0;
+  }
+  .stats-card {
+    text-align: center;
+    margin-top: 0;
+  }
+  .figure > p {
+    font-size: 3rem;
+  }
+}
