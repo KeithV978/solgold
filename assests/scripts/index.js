@@ -2,6 +2,10 @@ $(document).ready(function () {
   $(".hamburger").click(function () {
     $(".navigator").toggleClass("active");
   });
+
+  $(".link").click(function () {
+    $(".navigator").toggleClass("active");
+  });
 });
 
 $(document).ready(function () {
